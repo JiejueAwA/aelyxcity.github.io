@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home Web - Aelyxcity</title>
+    <link rel="icon" href="icon.png"> <!-- 设置网页图标 -->
+    <style>
+        body {
+            background-image: url("bag.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0; /* 将导航栏定位到页面顶部 */
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+        .navbar-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end; /* 导航项右对齐 */
+        }
+
+        .navbar li {
+            margin-left: 30px;
+        }
+
+        .navbar a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .center-text {
+            text-align: center;
+            font-family: "Mi Sans Bold", Arial, sans-serif;
+            font-size: 48px; /* 调整为大字号 */
+            color: #000; /* 将颜色改为黑色 */
+            margin-top: 200px;
+            margin-top: 80px; /* 调整导航栏高度后的间距 */
+        }
+        
+        .btn {
+            background-image: url("anniu.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.6;
+            width: 200px;
+            height: 50px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFF;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .popup {
+            background-color: #FFF;
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        .popup-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .popup-content {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .popup button {
+            background-color: #000;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        
+        .overlay.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <ul>
+            <li><a href="https://www.mcend.shop/?code=YT0xMiZiPTgy">购买</a></li>
+            <li><a href="uplogs.html">更新日志</a></li>
+            <li><a href="aboutwe.html">关于我们</a></li>
+			<li><a href="sb.html">友情链接</a></li>
+			<li><a href="other.html">其他项目</a></li>
+			<li><a href="kami_verify.html">卡密验证</a></li>
+        </ul>
+    </div>
+    
+    <div class="center-text">
+        <h1>Aelyxcity</h1> <!-- 使用 h1 标签以显示大字 -->
+    </div>
+    
+    <a class="btn" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ULnnZE6iVIq0uhJj_dW2Di3yPB_7dtky&authKey=60GJ1PmdAIJJ7upRrmPVt1KyWq1Z8Uh2Opfd%2FyHBzql1ZbQfuK%2FAIObeHPtL1cZc&noverify=0&group_code=589468350">加入我们的QQ</a>
+    
+    <div class="overlay" id="popupOverlay">
+        <div class="popup">
+            <h2 class="popup-title">ReadMe</h2>
+            <p class="popup-content">网站更新了一堆链接，可以点进去看看，然后就是做着玩的，没恶意</p>
+            <button onclick="closePopup()">确定</button>
+        </div>
+    </div>
+    
+    <script>
+        function openPopup() {
+            document.getElementById("popupOverlay").classList.add("show");
+        }
+        
+        function closePopup() {
+            document.getElementById("popupOverlay").classList.remove("show");
+        }
+        
+        // 页面加载时自动弹出弹窗
+        window.onload = function() {
+            openPopup();
+        };
+    </script>
+</body>
+</html>

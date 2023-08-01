@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Update Logs - Aelyxcity</title>
+    <link rel="icon" href="icon.png"> <!-- 设置网页图标 -->
+    <style>
+        body {
+            background-image: url("bag.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0; /* 将导航栏定位到页面顶部 */
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+        .navbar-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px; /* 设置导航栏按钮的间隙 */
+        }
+
+        .navbar li {
+            /* margin-left: 30px; 不再需要设置按钮之间的间隙，通过ul的gap属性实现 */
+        }
+
+        .navbar a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 18px;
+            /* 对按钮大小和内边距进行微调，保持与其他项目容器间隙一致 */
+            padding: 8px 12px;
+            border-radius: 4px;
+            /* 设置背景颜色为完全透明 */
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .title {
+            text-align: center;
+            font-family: "Mi Sans Bold", Arial, sans-serif;
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <ul>
+            <!-- 添加样式到购买链接 -->
+            <li><a href="https://www.mcend.shop/?code=YT0xMiZiPTgy">购买</a></li>
+            <!-- 添加样式到更新日志链接 -->
+            <li><a href="uplogs.html">更新日志</a></li>
+            <!-- 添加样式到关于我们链接 -->
+            <li><a href="aboutwe.html">关于我们</a></li>
+            <!-- 添加样式到友情链接链接 -->
+            <li><a href="sb.html">友情链接</a></li>
+            <!-- 添加样式到其他项目链接 -->
+            <li><a href="other.html">其他项目</a></li>
+            <!-- 添加样式到卡密验证链接 -->
+            <li><a href="kami_verify.html">卡密验证</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <h1 class="title">Update Logs</h1>
+        <p class="subtitle">只有大版本</p>
+        <p class="subtitle">2023-07-10 - 版本 0710</p>
+        <ul>
+            <li>换了一个水影</li>
+            <li>绕过了到爆/反击退00vl</li>
+            <li>新增了HWIDCHECK,保护内部用户的权益</li>
+        </ul>
+        
+        <p class="subtitle">2023-06-25 - 版本 0625</p>
+        <ul>
+            <li>修复已知的 bug</li>
+            <li>优化游戏性能</li>
+            <li>增加新的玩法</li>
+        </ul>
+        
+        <!-- 添加更多更新日志 -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Updates - Aelyxcity</title>
+    <link rel="icon" href="icon.png"> <!-- 设置网页图标 -->
+    <style>
+        body {
+            background-image: url("bag.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0; /* 将导航栏定位到页面顶部 */
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+        .navbar-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end; /* 导航项右对齐 */
+        }
+
+        .navbar li {
+            margin-left: 30px;
+        }
+
+        .navbar a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .title {
+            text-align: center;
+            font-family: "Mi Sans Bold", Arial, sans-serif;
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .buttons-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            background-image: url("anniu.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.6;
+            width: 200px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFF;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        /* 弹窗样式 */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        
+        .modal-content {
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            animation: zoomInModal 0.3s;
+        }
+        
+        .modal-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .modal-content p {
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .modal-button {
+            display: block;
+            width: 100px;
+            height: 40px;
+            margin: 20px auto 0;
+            background-color: #333;
+            color: #FFF;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .modal-button:hover {
+            background-color: #555;
+        }
+        
+        /* 缩放动画 */
+        @keyframes zoomInModal {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <ul>
+            <li><a href="https://www.mcend.shop/?code=YT0xMiZiPTgy">购买</a></li>
+            <li><a href="uplogs.html">更新日志</a></li>
+            <li><a href="aboutwe.html">关于我们</a></li>
+			<li><a href="sb.html">友情链接</a></li>
+			<li><a href="other.html">其他项目</a></li>
+			<li><a href="kami_verify.html">卡密验证</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <h1 class="title">Updates</h1>
+        <p class="subtitle">最新更新日志。</p>
+        
+        <div class="buttons-container">
+            <a class="btn" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ULnnZE6iVIq0uhJj_dW2Di3yPB_7dtky&authKey=60GJ1PmdAIJJ7upRrmPVt1KyWq1Z8Uh2Opfd%2FyHBzql1ZbQfuK%2FAIObeHPtL1cZc&noverify=0&group_code=589468350">加入QQ群</a>
+            <button class="btn" onclick="zoomPage()">作者QQ</button>
+        </div>
+        
+        <p>我们的团队就我一个人，还有神秘的帅哥</p>
+        
+		<p>*它好像不想露名<p>
+		
+		<p>管他什么东西捏，反正我也是要鸣谢一下人员捏~~<p>
+		
+        <p>Bobo1337、NanGJ_、FoxSesne、米饭团子、剧终</p>
+        
+        <p>还有买我内部的臭宝们~ 害羞o((>ω< ))o </p>
+        
+        <!-- 弹窗内容 -->
+        <div id="modal" class="modal-overlay" style="display: none;">
+            <div class="modal-content">
+                <h2 class="modal-title">作者QQ</h2>
+                <p>2546174856</p>
+                <button class="modal-button" onclick="closeModal()">确定</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function zoomPage() {
+            var modal = document.getElementById("modal");
+            modal.style.display = "flex";
+            
+            var content = document.getElementsByClassName("content")[0];
+            content.style.animation = "zoomIn 0.2s";
+        }
+        
+        function closeModal() {
+            var modal = document.getElementById("modal");
+            modal.style.display = "none";
+            
+            var content = document.getElementsByClassName("content")[0];
+            content.style.animation = "";
+        }
+    </script>
+</body>
+</html>
